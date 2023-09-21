@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222222;
+}
+
+.tooLowResolution {
+    display: none;
+}
+
+.board {
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start {
+    float: left;
+    width: 200px;
+    height: 400px;
+    background-color: green;
+}
+
+.player {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 175px;
+    margin-left: 75px;
+    border: 5px solid black;
+    background-color: red;
+}
+
+.opponents {
+    float: left;
+    width: 600px;
+    height: 400px;
+    background-color: #444444;
+}
+
+.opponent {
+    width: 50px;
+    height: 50px;
+    margin-top: 40px;
+    border: 5px solid black;
+    border-radius: 50%;
+    background-color: #3366FF;
+}
+
+.opponent:nth-child(even) {
+    margin-left: 550px;
+}
+
+.meta {
+    float: left;
+    width: 200px;
+    height: 400px;
+    background-color: green;
+}
+
+.gameLevel {
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    color: wheat;
+}
+
+.gameLevel .counter {
+    color: green;
+}
+
+.collisionsCounter {
+    margin-top: 30px;
+    margin-left: 25px;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    color: wheat;
+}
+
+.collisionsCounter .counter {
+    color: red;
+}
+
+.endGame {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+
+.startAgain {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    background-color: cadetblue;
+    color: aquamarine;
+}
+
+@media screen and (max-height: 799px) {
+    .tooLowResolution {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tooLowResolution h1 {
+        font-size: 23px;
+        letter-spacing: 2px;
+        line-height: 300%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: red;
+    }
+
+    .board {
+        display: none;
+    }
+
+    .gameLevel {
+        display: none;
+    }
+
+    .collisionsCounter {
+        display: none;
+    }
+
+    .endGame {
+        display: none;
+    }
+
+    .startAgain {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    .tooLowResolution {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .tooLowResolution h1 {
+        font-size: 23px;
+        letter-spacing: 2px;
+        line-height: 300%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        text-transform: uppercase;
+        color: red;
+    }
+
+    .board {
+        display: none;
+    }
+
+    .gameLevel {
+        display: none;
+    }
+
+    .collisionsCounter {
+        display: none;
+    }
+
+    .endGame {
+        display: none;
+    }
+
+    .startAgain {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .tooLowResolution h1 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .tooLowResolution h1 {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+}
