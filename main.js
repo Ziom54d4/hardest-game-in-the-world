@@ -5,7 +5,7 @@ creatingAnElementForTooLowResolution();
 function creatingAnElementForTooLowResolution() {
   elementTooLowResolution = document.createElement("div");
   elementTooLowResolution.classList.add("tooLowResolution");
-  elementTooLowResolution.innerHTML = `<h1>Za mała rozdzielczość! </br> Najniższa wymagana: 1369 x 800</h1>`;
+  elementTooLowResolution.innerHTML = `<h1>Za mały rozmiar okna przeglądarki! </br> Najniższy wymagany: 1369 x 800</h1>`;
   document.body.appendChild(elementTooLowResolution);
 }
 
